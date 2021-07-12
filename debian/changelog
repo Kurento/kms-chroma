@@ -1,8 +1,20 @@
+kms-chroma (7.0.0-0kurento1.18.04~20210615190553.gbp40ca29) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @40ca29348fe6941abd1fcfb6ce84fe77be4c59fb **
+
+  [ Juan Navarro ]
+  * UNRELEASED
+
 kms-chroma (6.16.1-0kurento1) UNRELEASED; urgency=medium
 
   * UNRELEASED
 
- -- Juan Navarro <juan.navarro@gmx.es>  Wed, 03 Mar 2021 12:26:49 +0100
+  [ root ]
+  * UNRELEASED
+  * UNRELEASED
+  * UNRELEASED
+
+ -- Saul Labajo <slabajo@naevatec.com>  Tue, 15 Jun 2021 19:06:08 +0000
 
 kms-chroma (6.16.0-0kurento1) testing; urgency=medium
 

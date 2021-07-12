@@ -4,9 +4,9 @@ Priority: optional
 Build-Depends: debhelper (>= 9),
  cmake,
  pkg-config,
- gstreamer1.5-plugins-bad,
- gstreamer1.5-plugins-base,
- gstreamer1.5-plugins-good,
+ gstreamer1.0-plugins-bad,
+ gstreamer1.0-plugins-base,
+ gstreamer1.0-plugins-good,
  kms-core-dev (>= 6.16.1),
  kms-elements-dev (>= 6.16.1),
  kms-filters-dev (>= 6.16.1),
@@ -22,12 +22,14 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends},
  ${misc:Depends},
- gstreamer1.5-plugins-bad,
- gstreamer1.5-plugins-base,
- gstreamer1.5-plugins-good,
+ gstreamer1.0-plugins-bad,
+ gstreamer1.0-plugins-base,
+ gstreamer1.0-plugins-good,
  kms-core (>= 6.16.1),
  kms-elements (>= 6.16.1),
  kms-filters (>= 6.16.1)
+Breaks: kms-chroma-6.0
+Replaces: kms-chroma-6.0
 Description: Kurento Chroma filter
 
 Package: kms-chroma-dev
@@ -37,10 +39,14 @@ Depends: kms-chroma (= ${binary:Version}),
  kms-core-dev,
  kms-elements-dev,
  kms-filters-dev
+Breaks: kms-chroma-6.0-dev
+Replaces: kms-chroma-6.0-dev
 Description: Kurento Chroma filter - Development files
 
 Package: kms-chroma-dbg
 Architecture: any
 Section: debug
 Depends: kms-chroma (= ${binary:Version})
+Breaks: kms-chroma-6.0-dbg
+Replaces: kms-chroma-6.0-dbg
 Description: Kurento Chroma filter - Debugging symbols
